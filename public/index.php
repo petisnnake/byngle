@@ -78,5 +78,5 @@ else
 	echo "controller call_user_func_array error";	
 }
 
-echo 'controller = ' . $controller . '; model = ' . $model . '; action = ' . $action . '; query string = ' . implode('/', $query);
+//echo 'controller = ' . $controller . '; model = ' . $model . '; action = ' . $action . '; query string = ' . implode('/', $query);
 ?>
