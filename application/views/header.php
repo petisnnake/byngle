@@ -1,7 +1,7 @@
 <html>
 <head>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="/public//scripts/iqtest.js"></script>
+<script type="text/javascript" src="/public/scripts/iqtest.js"></script>
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css">
 <link rel="stylesheet" type="text/css" href="/public/css/main.css">
 <title>
