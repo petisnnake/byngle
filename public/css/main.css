@@ -22,16 +22,27 @@ body {text-align: center;}
 						border-bottom-right-radius: 5px 5px; border-top-left-radius: 5px 5px; border-top-left-radius: 5px 5px;
 						border-top-right-radius: 5px 5px; border-top-right-radius: 5px 5px; color: #111; display: block;
 						font: normal normal bold 18px/normal Arial, sans-serif; padding: 8px 10px; text-align: center;
-						text-decoration: none; text-shadow: #FE6 0px 1px 0px; margin: 5px 0px;}
+						text-decoration: none; text-shadow: #FE6 0px 1px 0px; margin: 5px 0px; cursor: pointer;}
 #startsubmit:hover {background-position: 0px -5px;}
 
 #minimenu_bottom {background: url('/public/img/rainbow.gif') repeat-x; height: 5px; margin: 0px auto 0px auto; font: normal normal normal 13px/20px 'Lucida Grande', Arial, sans-serif; text-align: left; color: #6AC;}
 #maincontent {width: 1000px; margin: 0px auto 0px auto;}
-#infodiv {width: 500px; margin: 0px auto;border-bottom-left-radius: 12px 12px; border-bottom-left-radius: 12px 12px; border-bottom-right-radius: 12px 12px;
+#content {width: 770px; border: solid 1px blue;}
+#infodiv {width: 500px; margin: 30px auto;border-bottom-left-radius: 12px 12px; border-bottom-left-radius: 12px 12px; border-bottom-right-radius: 12px 12px;
 						border-bottom-right-radius: 12px 12px; border-top-left-radius: 12px 12px; border-top-left-radius: 12px 12px; 
 						border-top-right-radius: 12px 12px; border-top-right-radius: 12px 12px;
-						-webkit-box-shadow: rgba(0, 0, 0, 0.496094) 0px 1px 3px; padding: 10px; margin-top: 30px;}
+						-webkit-box-shadow: rgba(0, 0, 0, 0.496094) 0px 1px 3px; padding: 10px;}
+div#test {border: solid 1px red; width: 1000px; margin: 30px auto; overflow: hidden;}
+#testnav {width:220px; border: solid 1px green; text-align: left; overflow: auto; float: right; font: bold 22px 'Helvetica Neue', Arial, sans-serif;}
+#testnav div {width: 30px; height: 30px; border: solid 2px #FFF; float: left; text-align: center; padding: 10px;border-bottom-left-radius: 10px 10px;
+						border-bottom-right-radius: 10px 10px; border-top-left-radius: 10px 10px; border-top-right-radius: 10px 10px;}
+#testnav div:hover {border: solid 2px red; cursor: pointer; }
+#questions {border: solid 1px yellow; background-color: grey;}
+#questions table {margin: 10px auto; border: solid 3px green; border-spacing: 10px 10px; border-collapse:separate;}
+#questions td {background-color: #FFF; width: 150px; height: 100px; text-align: center; border: solid 3px pink; padding: 15px 10px; border-bottom-right-radius: 40px;border-top-right-radius: 40px;}
+#questions td:hover {border: solid 3px blue; border-bottom-right-radius: 5px 5px; border-top-right-radius: 5px 5px; border-bottom-right-radius: 40px;border-top-right-radius: 40px;}
+.selected_nr {background-color: A0A0A0;}
 h1 {font: normal normal bold 20px/24px 'Helvetica Neue', Arial, sans-serif; color: #333;}
-h1.info {border-bottom: 1px solid #EEE; margin: 0px 0px 10px 0px;; padding-bottom: 5px;}
+h1.info {border-bottom: 1px solid #EEE; margin: 0px 0px 10px 0px; padding-bottom: 5px;}
 #logo {margin-top: 20px;}
 #tag {font: normal normal bold 18px/normal Arial, sans-serif; color: #DEF; padding: 0px 0px 0px 0px; margin-top: 5px;}
