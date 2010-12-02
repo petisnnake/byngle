@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+body {text-align: center;font-family: 'Lucida Grande', sans-serif; font-size: 13px; background: url('/public/img/body_bg_new.jpg') repeat-x; background-color: #e4e4e4;}
+h {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold;}
+h1 {font: normal normal normal 58px/normal 'Helvetica Neue', Arial, sans-serif; color: #333; text-shadow: #A4A4A4 3px 3px 5px; font-weight: bold;}
+h2 {font: normal normal bold 18px/normal 'Helvetica Neue', Arial, sans-serif; color: #333;}
+#minimenu_top1 {background: #FFF url('/public/img/bg-newbar.jpg') repeat-x 0px 0px;-webkit-box-shadow: rgba(0, 0, 0, 0.496094) 0px 1px 2px;}
+#minimenu_top1 > #minimenu_top2 {width: 1000px; padding: 10px 0; font: normal normal bold 13px/19px 'Helvetica Neue', Arial, sans-serif; color: #FFF; margin: 0px auto 0px auto; text-align: left;}
+#header {background: #246;background: #59B url('/public/img/byngle-sun.gif') no-repeat 0px -20px; height: 120px;text-align: center;}
+#minimenu_bottom {background: url('/public/img/rainbow.gif') repeat-x; height: 5px; margin: 0px auto 0px auto; font: normal normal normal 13px/20px 'Lucida Grande', Arial, sans-serif; text-align: left; color: #6AC;}
+#maincontent {width: 1000px; padding: 10px; margin: 20px auto 0px auto; background-color: #FFF; -webkit-box-shadow: rgba(0, 0, 0, 0.496094) 0px 1px 3px;}
+.roundedcorners {border-bottom-left-radius: 12px 12px; border-bottom-right-radius: 12px 12px; border-top-left-radius: 12px 12px; border-top-right-radius: 12px 12px;}
+.innershadow {-moz-box-shadow:inset 2 2 10px #000000; -webkit-box-shadow:inset 2 2 10px #000000; box-shadow:inset 2 2 10px #000000;}
+#score {font-size: 80px; color: #000; border: solid 5px #f07132; padding: 0px 10px; background-color: #FEFCEB;}
