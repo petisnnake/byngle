@@ -8,6 +8,6 @@
 		<br>
 		<p><b>All 'questions' are composed of 3x3 matrices. </b></p>
 		<p><b>All questions have a single correct answer, just select it and you will be prompted to the next question.</b></p>
-		<p class="startbutton"><a id="startsubmit">Start Test</a></p>		
+		<p class="startbutton"><a class="startsubmit">Start Test</a></p>		
 	</div>
 </div>

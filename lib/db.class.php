@@ -2,13 +2,17 @@
 
 class Db
 {
-	protected static $dbh = false;
-	protected $result;
+	protected $dbh = false;
+
+	function getHandler()
+	{
+		return $this->dbh;		
+	}
 	
 	function connect()
 	{
-		self::$dbh = new PDO('mysql: host=' . DB_HOST . ';dbname=' . DB_NAME . ';' . DB_USER . DB_PASSWORD);
-		self::$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);		
+		$this->dbh = new PDO('mysql: host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USER, DB_PASSWORD);
+		$this->dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);		
 	}	
 }
 ?>

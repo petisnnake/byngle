@@ -10,19 +10,23 @@ default header title
 <body>
 <div id="minimenu_top1">
 	<div id="minimenu_top2">
-		There's some basic info here.		
+		<a href="<?php echo URL; ?>"><div id="logo"></div></a>
 	</div>
 </div>
 <div id="header">
+
 	<div id="wrap">
 		<div id="mainmenu">
-			<a href="<?php echo URL; ?>"><img id="logo" src="public/img/byngle-logo.png" /></a>
-			<p id="tag">The most accurate iq test on the web.</p>		
-		</div>
-		<div id="minimenu_float">
-			<div id="welcome">
-				<h2>Welcome! Ready to go?</h2>
-				<p id="startbutton"><a href="<?php echo URL . "/" . "iqtest" . "/"; ?>" id="startsubmit">Start IQ Test</a></p>
+	
+		<h1>Welcome to the most accurate I.Q. test on the web.</h1>
+	
+	
+	
+	</div>
+		<div id="minimenu_float" class="roundedmax shadow">
+			<div id="welcome" class="roundedmedium">
+				<h2>Ready to go?</h2>
+				<p id="startbutton"><a href="<?php echo URL . "/" . "iqtest" . "/"; ?>" class="startsubmit roundedmedium">Start IQ Test</a></p>
 				<p>Avarage time to complete: 30 min</p>
 				<p>Tests completed: 3432</p>
 				<p>For ages: 12 - 100</p>
@@ -33,12 +37,4 @@ default header title
 	</div>
 </div>
 <div id="minimenu_bottom">
-</div>
-<div id="maincontent">
-
-
-maincontent
-
-
-
 </div>
