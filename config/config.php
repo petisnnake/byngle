@@ -3,7 +3,7 @@ define('URL', 'http://byngle.com');
 define('DEVELOPMENT_ENVIORMENT', true);
 define('DB_NAME', 'byngle');
 define('DB_USER', 'root');
-define('DB_PASSWORD', 'm1a3n3n7erMAN1');
+define('DB_PASSWORD', 'lol');
 define('DB_HOST', 'localhost');
 define('PRICE', 2);
 define('NRQUESTIONS', 43);
