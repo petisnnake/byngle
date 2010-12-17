@@ -4,7 +4,7 @@ body {text-align: center;font-family: 'Lucida Grande', sans-serif; font-size: 13
 h {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
 h1 {font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; font-size: 30px; font-weight: bold; padding-top: 20px;}
 #background {display:block;}
-#minimenu_top1 {background: #FFF url('/public/img/bg-newbar.jpg') repeat-x 0px 0px;-webkit-box-shadow: rgba(0, 0, 0, 0.496094) 0px 1px 2px;}
+#minimenu_top1 {background: #FFF url('/public/img/bg-newbar.jpg') repeat-x 0px 0px;-webkit-box-shadow: rgba(0, 0, 0, 0.496094) 0px 1px 2px; height: 40px;}
 #minimenu_top1 > #minimenu_top2 {width: 1000px; padding: 6px 0; margin: 0px auto 0px auto; text-align: left;}
 #logo {background: url('/public/img/logo.png') no-repeat 0px -28px; height: 28px; width: 83px;}
 #logo:hover {background-position: 0px 0px;}
@@ -52,20 +52,32 @@ h2 {font: normal normal bold 18px/normal 'Helvetica Neue', Arial, sans-serif; co
 	
 #content {width: 770px; border: solid 1px blue;}
 
-div#test {border: solid 1px red; width: 1000px; margin: 30px auto; overflow: hidden;}
+#question_nr {position: absolute; left: 0px; top: 400px;}
+#foo {}
+#timer {font-size: 14px; font-weight: bold; color: #FFF; background-color: #222; padding: 5px 10px; width: 40px; margin: 10px auto;}
 
-#questions {border: solid 1px yellow; background-color: grey;}
-#questions table {background-color: #FFF; margin: 10px auto; border: solid 3px green; border-spacing: 0px 15px; border-collapse:separate;}
+#test {width: 980px; margin: 0px auto 10px auto; overflow: hidden; padding: 10px; background-color: #FFF;}
+#testcontainer {margin: 0px auto; overflow: auto; font-family: 'Lucida Grande', Arial, sans-serif; background: url('/public/img/body_bg_new.jpg') repeat-x 0px -30px;}
+#testcontainer #testnav {width: 235px; float: right; background-color: #FFF; text-align: center; margin-left: 10px;}
+#testcontainer #testnav .number {width: 18px; height: 18px; font-size: 13px; font-weight: bold; color: #456; border: solid 1px #333; margin: 3px; float: left;  text-align: center; padding: 16px; cursor: pointer;}
+#testcontainer #testnav .number:hover {}
+#testcontainer #testnav .number > b {color: #F49835; margin-left: 2px;}
+#testcontainer #questions {width: 760px;}
+
+#questions {height: 680px; padding-top: 0px;}
+#questions table {height: 310px; background-color: #E5EEF2; margin: 10px auto; border-spacing: 0px 15px; border-collapse: separate; border-top: solid 1px #000;}
+#questions table tr td {background-color: #E5EEF2;}
 #questions td {background-color: #FFF;}
 #questions td img {padding-right: 10px;}
-div.number {width: 30px; height: 30px; border: solid 2px #FFF; float: left; text-align: center; padding: 10px;border-bottom-left-radius: 10px 10px;
-						border-bottom-right-radius: 10px 10px; border-top-left-radius: 10px 10px; border-top-right-radius: 10px 10px;}
-.letter {font-weight: bold; color: #333; height: 30px; border: solid 1px green; margin-left: 15px; font-size: 26px; font-family: 'Helvetica Neue', Arial, sans-serif;}
-.answerimg {width: 150px; height: 100px; text-align: center; border: solid 3px #FFF; padding: 5px 0px; border-bottom-right-radius: 30px;border-top-right-radius: 30px;}
-.answerimg:hover {border: solid 3px blue; border-bottom-right-radius: 5px 5px; border-top-right-radius: 5px 5px; border-bottom-right-radius: 40px;border-top-right-radius: 40px;}
-.selected_nr {width: 30px; height: 30px; border: solid 2px #FFF; float: left; text-align: center; padding: 10px;border-bottom-left-radius: 10px 10px;
-						border-bottom-right-radius: 10px 10px; border-top-left-radius: 10px 10px; border-top-right-radius: 10px 10px;background-color: A0A0A0;}
-.finishhint {float: left; font-size: 13px; color: #333;}
+#questions table tr td .answerimg {background-color: #FFF;}
+
+p.tip {-webkit-box-shadow: #CCC 0px 1px 2px 0px; background-color: #E5EEF2; padding: 10px 10px; text-align: left;}
+span.info {background-color: #f07132; background-position: 35px;}
+.letter {font-weight: bold; color: #333; height: 30px; margin-left: 15px; font-size: 26px; font-family: 'Helvetica Neue', Arial, sans-serif;}
+.answerimg {width: 150px; height: 100px; text-align: center; border: solid 1px #E5EEF2; padding: 5px 0px; border-bottom-right-radius: 30px;border-top-right-radius: 30px; background-color: #FFF;}
+.answerimg:hover {border: solid 1px #000; background-color: red; cursor: pointer; border-bottom-right-radius: 40px;border-top-right-radius: 40px; }
+.selected_nr {border: solid 2px #FFF; float: left; text-align: center; padding: 16px; background-color: #C4E9F6;}
+.finishhint {float: left; font-size: 13px; color: #333; margin-left: 15px;}
 ul.benefits {text-align: left;}
 #tag {font: normal normal bold 18px/normal Arial, sans-serif; color: #DEF; padding: 0px 0px 0px 0px; margin-top: 5px;}
 #r_maincontent {text-align: left; background-color: #C0DEED; border: solid 1px #C0DEED;}

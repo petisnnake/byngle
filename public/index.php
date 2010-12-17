@@ -70,6 +70,7 @@ function __autoload($className)
 /** Loading the controller and the action **/
 $dispatch = new $controller($model, $controller_url, $action);
 
+
 if(method_exists($controller, $action))
 {
 	call_user_func_array(array($dispatch, $action), $query);	

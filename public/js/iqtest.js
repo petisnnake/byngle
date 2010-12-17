@@ -10,6 +10,8 @@ $(function()
 		questions[i] = new Array(8);
 	}
 		
+	changePage(1);
+	
 	function isDone()
 	{
 		var rez = true;
@@ -39,7 +41,7 @@ $(function()
 		
 		$('.answerimg').click(function() {
 			answers[page - 1] = $(this).prev().children().html();
-			$('#testnav > .selected_nr').html(page + answers[page - 1]);
+			$('#testnav > .selected_nr').html(page + '<b>' + answers[page - 1] + '</b>');
 			if(isDone())
 			{
 				$('.finishhint').html('Finished! Click \'Finish\' to calculate your IQ.');
@@ -53,6 +55,7 @@ $(function()
 	{
 		$('#testnav > div').eq(page - 1).removeClass('selected_nr').addClass('number');
 		$('#testnav > div').eq(newPage - 1).addClass('selected_nr');
+		$('#testnav > div').eq(newPage - 1).addClass('roundedmedium');
 		$('#foo').html(newPage);
 		
 	/** question order has already been generated **/		
@@ -75,45 +78,29 @@ $(function()
 			$('#questions').children().remove();
 			writeTest(newPage);
 		}
-	
+
 		page = newPage;	
 	}
 	
-	$('.startsubmit').click(function() {
-		
-		$('#infodiv').slideUp('fast');
-		$('#maincontent').append('<div id="test"><div id="testnav"></div><div id="content"><p id="foo">status</p><div id="questions"></div></div></div>');
-		for(i = 1; i <= NR_QUESTIONS; i++)
+	$('#testnav > div').click(function() {
+		if($(this).html() != page)
 		{
-			$('#testnav').append('<div class="number">' + i + '</div>');
+			changePage(parseInt($(this).html()));
 		}
-		$('#testnav').append('<p class="startbutton2"><a id="finish" class="startsubmit">Finish</a></p>');
-		$('#testnav').append('<p class="finishhint">You still have questions to answer.</p>');
+	});	
 		
-		changePage(1);
-
-		$('#testnav > div').click(function() {
-			if($(this).html() != page)
-			{
-				changePage(parseInt($(this).html()));
-			}
-		});	
-		
-		$('#finish').click(function()
+	$('#finish').click(function()
+	{
+		$.ajax(
 		{
-			$.ajax(
-			{
-			   type: "POST",
-			   url: "/scripts/calculate.php",
-			   data: "answers=" + answers + "&order=" + questions,
-			   success: function(id)
-			   {
-				window.location= '/iqtest/results/' + id;
-				test_id = id;
-			   }
-			});
-
-
+		   type: "POST",
+		   url: "/scripts/calculate.php",
+		   data: "answers=" + answers + "&order=" + questions,
+		   success: function(id)
+		   {
+			window.location= '/iqtest/results/' + id;
+			test_id = id;
+		   }
 		});
 	});
 	
